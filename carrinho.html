@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href= "https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="https://static.saopaulomania.com.br/produtos/bola-de-futebol-campo-adidas-uefa-champions-league-replica-final-istanbul-20/14/NQQ-0967-014/NQQ-0967-014_zoom1.jpg?ts=1691379983&ims=544x" type="image/x-icon">
+    <title>Futeshop - Camisas de time</title>
+    <style>
+        .cart-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .product {
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .product img {
+            max-width: 50px;
+            max-height: 50px;
+            margin-right: 10px;
+        }
+
+        .total {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .cupom {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Camisas de Time</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ofertas.html">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vizualizados.html">Mais Visualizados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="categoria.html">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrinho.html">Carrinho</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagamento.html">Pagamento</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+      <div class="container mt-4">
+        <h2>Carrinho de Compras</h2>
+        
+        <div class="row">
+            <div class="col-3">
+                <a href="detalhes1.html" class="product-link">
+                    <figure class="figure">
+                        <img src="https://static.netshoes.com.br/produtos/camisa-vasco-iii-2018-sn-torcedor-diadora-masculina/06/043-9594-006/043-9594-006_zoom1.jpg?ts=1692121710&" alt="" class="img-thumbnail float-start">
+                        <figcaption class="figcaption text-md-center">Camisa do Vasco</figcaption>
+                    </figure>
+                </a>
+            </div>
+
+            <div class="col-3">
+                <a href="detalhes2.html" class="product-link">
+                    <figure class="figure">
+                        <img src="https://static.netshoes.com.br/produtos/camisa-vasco-iii-2122-sn-torcedor-kappa-masculina/06/D24-3377-006/D24-3377-006_zoom1.jpg?ts=1695353442&" alt="" class="img-thumbnail float-start">
+                        <figcaption class="figcaption text-md-center">Camisa do Vasco</figcaption>
+                    </figure>
+                </a>
+            </div>
+
+            <div class="col-3">
+                <a href="detalhes3.html" class="product-link">
+                    <figure class="figure">
+                        <img src="https://static.netshoes.com.br/produtos/camisa-fluminense-i-2324-sn-torcedor-umbro-masculina/10/2IA-4991-410/2IA-4991-410_zoom1.jpg?ts=1695700162&" alt="" class="img-thumbnail float-start">
+                        <figcaption class="figcaption text-md-center">Camisa do Fluminense</figcaption>
+                    </figure>
+                </a>
+            </div> 
+
+            <div class="col-3">
+                <a href="detalhes4.html" class="product-link">
+                    <figure class="figure">
+                        <img src="https://static.netshoes.com.br/produtos/camisa-botafogo-i-2324-sn-torcedor-reebok-masculina/26/D19-6616-026/D19-6616-026_zoom1.jpg?ts=1699277461&" alt="" class="img-thumbnail float-start">
+                        <figcaption class="figcaption text-md-center">Camisa do Botafogo</figcaption>
+                    </figure>
+                </a>
+            </div> 
+        </div>
+
+        <div class="cupom">
+            <label for="cupom">Cupom de Desconto:</label>
+            <input type="text" id="cupom" placeholder="Digite o cupom">
+            <button class="btn btn-primary" onclick="aplicarCupom()">Aplicar Cupom</button>
+        </div>
+    
+        <div class="total" id="total">Total: R$ 399,96</div>
+    
+        <a href="pagamento.html" class="btn btn-success mt-3">Finalizar Compra</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
